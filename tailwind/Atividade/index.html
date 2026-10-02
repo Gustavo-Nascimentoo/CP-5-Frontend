@@ -15,16 +15,16 @@
   <nav class="bg-gray-900 text-white px-6 py-4 flex items-center justify-center md:justify-between">
     <span class= "hidden md:flex text-lg font-bold">Tailwind Demo</span>
     <ul class="flex gap-6 text-md">
-      <li><a class="hover:text-cyan-600" href="#grid">Grid</a></li>
-      <li><a class="hover:text-cyan-600" href="#componentes">Componentes</a></li>
-      <li><a class="hover:text-cyan-600" href="#images">Formulário</a></li>
+      <li><a class="hover:text-cyan-200" href="#grid">Grid</a></li>
+      <li><a class="hover:text-cyan-200" href="#componentes">Componentes</a></li>
+      <li><a class="hover:text-cyan-200" href="#images">Formulário</a></li>
     </ul>
   </nav>
 
-  <div>
-    <header>
-      <h1>Tailwind na prática</h1>
-      <p>
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-2">Tailwind na prática</h1>
+      <p class="text-gray-500 text-lg">
         Classes utilitárias
       </p>
     </header>
@@ -89,21 +89,21 @@
 
     <section id="images" class="mb-12">
       <div class="flex gap-7">
-        <div class="">
-          <img class="" src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
+        <div class="w-1/2">
+          <img class="blur-sm hover:filter-none transition duration-200 ease-in-out" src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
         </div>
 
-        <div class="">
-          <img class="" src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
+        <div class="w-1/2">
+          <img class="grayscale hover:filter-none transition duration-400 ease-in-out" src="https://picsum.photos/500/300" alt="Imagem gerada aleatoriamente">
         </div>
       </div>
     </section>
 
     <section id="animation" class="mb-12">
       <div class="flex items-center gap-7">
-        <i class="bx bx-heart"></i>
-        <i class="bx bx-arrow-down-stroke"></i>
-        <i class="bx bx-circle-dashed-half"></i>
+        <i class="animate-ping [animation-durantion:2s] text-3xl bx bx-heart"></i>
+        <i class="animate-bounce [animation-durantion:3s] text-6xl bx bx-arrow-down-stroke"></i>
+        <i class="animate-spin [animation-durantion:1s] text-5xl bx bx-circle-dashed-half"></i>
       </div>
     </section>
 
