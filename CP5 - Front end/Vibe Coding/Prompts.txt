@@ -1,0 +1,14 @@
+IA: CHATGPT
+
+Boa tarde, estou fazendo uma atividade onde preciso fazer uma landing page.
+Para minha landing page, vou querer ela baseada no site da nike igual mandei o link abaixo,
+mas o tema da minha será sobre perífericos de computador, onde na parte que mostra os tenis, 
+serão mouses e teclados. As cores do principais do site serão preto e branco
+(vermelho, verde, azul para dar detalhes e bordas as coisas do site, usando de referencia a ideia de RGB que todos gostam), 
+se possivel faça uma led rgb em alguma parte do site, mas algo simples pra não poluir demais, ao montar me mande em zip. 
+(Obs, só quero html e css).
+
+Ficou bem legal, separe o html e css e organize o arquivo para que eu possa compreender e visualizar melhor
+
+https://www.nike.com.br/?aw_affid=141629&awc=17652_1792087603_b5bd64fcbf7784cd30b782c08c4c58e8&utm_source=Zanox&utm_medium=141629&utm_
+campaign=Opera+Software+AS&utm_content=gx-br-awin-nike-ssd-ryvs&utm_term=Direct+Traffic&af_channel=141629

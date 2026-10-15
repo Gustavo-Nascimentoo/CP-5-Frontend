@@ -1,0 +1,93 @@
+<!doctype html>
+<!--
+  NEXUS — Landing page demonstrativa
+  Estrutura: HTML semântico; estilos em css/styles.css; interações em js/main.js.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="description" content="NEXUS — periféricos para quem exige precisão.">
+<title>NEXUS — Periféricos para outro nível</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="announcement">FRETE GRÁTIS EM PEDIDOS SELECIONADOS · ELEVE SEU SETUP</div>
+<header class="nav">
+  <a class="logo" href="#" aria-label="NEXUS início">NEXUS<span>.</span></a>
+  <nav class="navlinks" aria-label="Navegação principal">
+    <a href="#mouses">Mouses</a><a href="#teclados">Teclados</a><a href="#destaques">Destaques</a>
+  </nav>
+  <div class="navtools">
+    <label class="sr-only" for="search" style="position:absolute;left:-9999px">Buscar produtos</label>
+    <input class="search" id="search" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+    <button class="cart" id="cart" aria-live="polite">Sacola (0)</button>
+  </div>
+</header>
+<div class="rgb-line"></div>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Performance encontra design</div>
+    <h1>SEU SETUP.<span>SUAS REGRAS.</span></h1>
+    <p>Precisão em cada movimento. Controle em cada tecla. Conheça periféricos feitos para acompanhar seu ritmo.</p>
+    <div class="actions"><a class="btn" href="#destaques">Explorar produtos ↗</a><a class="btn light" href="#categorias">Descobrir a NEXUS</a></div>
+  </div>
+  <div class="hero-art">
+    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=1000&q=85" alt="Mouse gamer preto em destaque">
+  </div>
+</section>
+<div class="rgb-line"></div>
+<section class="section" id="categorias">
+  <div class="section-head"><div><div class="eyebrow">Encontre seu próximo upgrade</div><h2>ESCOLHA SEU EQUIPAMENTO.</h2></div><div class="subtle">Feito para jogar.<br>Pronto para tudo.</div></div>
+  <div class="categories">
+    <article class="category" id="mouses">
+      <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=85" alt="Mouse de computador em fundo claro">
+      <div class="category-copy"><h3>Mouses</h3><a href="#destaques" data-filter-link="mouse">Ver modelos ↗</a></div>
+    </article>
+    <article class="category" id="teclados">
+      <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=85" alt="Teclado mecânico para computador">
+      <div class="category-copy"><h3>Teclados</h3><a href="#destaques" data-filter-link="teclado">Ver modelos ↗</a></div>
+    </article>
+  </div>
+</section>
+<section class="section" id="destaques" style="padding-top:20px">
+  <div class="section-head"><div><div class="eyebrow">Seleção NEXUS</div><h2>FEITOS PARA IR ALÉM.</h2></div><div class="subtle" id="result-count">4 produtos em destaque</div></div>
+  <div class="products" id="products">
+    <article class="product" data-category="mouse" data-name="mouse nexus phantom wireless">
+      <div class="product-image"><span class="tag">Destaque</span><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=700&q=85" alt="Mouse gamer NEXUS Phantom preto"></div>
+      <h3>Phantom Wireless</h3><div class="type">Mouse gamer sem fio</div><div class="price-row"><span class="price">R$ 289,90</span><button class="add" data-product="Phantom Wireless">+ ADICIONAR</button></div>
+    </article>
+    <article class="product" data-category="teclado" data-name="teclado nexus pulse mechanical">
+      <div class="product-image"><span class="tag">RGB</span><img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=700&q=85" alt="Teclado mecânico NEXUS Pulse"></div>
+      <h3>Pulse Mechanical</h3><div class="type">Teclado mecânico RGB</div><div class="price-row"><span class="price">R$ 399,90</span><button class="add" data-product="Pulse Mechanical">+ ADICIONAR</button></div>
+    </article>
+    <article class="product" data-category="mouse" data-name="mouse nexus core precision">
+      <div class="product-image"><span class="tag">Essencial</span><img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=85" alt="Mouse preto NEXUS Core"></div>
+      <h3>Core Precision</h3><div class="type">Mouse ergonômico</div><div class="price-row"><span class="price">R$ 159,90</span><button class="add" data-product="Core Precision">+ ADICIONAR</button></div>
+    </article>
+    <article class="product" data-category="teclado" data-name="teclado nexus strike compact">
+      <div class="product-image"><span class="tag">Compacto</span><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=85" alt="Teclado compacto NEXUS Strike"></div>
+      <h3>Strike Compact</h3><div class="type">Teclado compacto</div><div class="price-row"><span class="price">R$ 329,90</span><button class="add" data-product="Strike Compact">+ ADICIONAR</button></div>
+    </article>
+    <div class="empty" id="empty">Nenhum produto encontrado. Tente outra busca.</div>
+  </div>
+</section>
+<section class="rgb-banner">
+  <div><div class="eyebrow">Sua luz. Seu ritmo.</div><h2>RGB MODE:<br>ON.</h2><p>Um toque de cor para dar personalidade ao setup. A iluminação certa destaca seu espaço sem roubar a cena.</p><a class="btn" href="#teclados">Ver teclados RGB ↗</a></div>
+  <div class="led-demo" aria-label="Demonstração decorativa de iluminação RGB"><div class="label">NEXUS LIGHT SYSTEM / 001</div><div class="led-bar"></div><div class="led-foot"><span>PERSONALIZE SEU ESPAÇO</span><span>RGB • ON</span></div></div>
+</section>
+<section class="section">
+  <div class="section-head"><div><div class="eyebrow">O essencial, bem feito</div><h2>DESEMPENHO EM CADA DETALHE.</h2></div></div>
+  <div class="benefits">
+    <div class="benefit"><strong>01 / Precisão</strong><p>Respostas rápidas e controle para acompanhar seus movimentos.</p></div>
+    <div class="benefit"><strong>02 / Conforto</strong><p>Design pensado para encaixar no seu ritmo de uso.</p></div>
+    <div class="benefit"><strong>03 / Personalidade</strong><p>Um setup que combina desempenho com seu estilo.</p></div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div><a class="logo" href="#" style="color:white">NEXUS<span>.</span></a><p>Periféricos para outro nível.<br>Projeto conceitual para fins acadêmicos.</p></div><div class="footer-links"><a href="#mouses">Mouses</a><a href="#teclados">Teclados</a><a href="#destaques">Destaques</a><a href="#categorias">Categorias</a></div><p>© 2026 NEXUS — marca fictícia.<br>Preços ilustrativos.</p></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
